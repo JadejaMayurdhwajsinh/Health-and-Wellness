@@ -11,13 +11,14 @@ A responsive static website designed to promote healthy living and wellness. Bui
 
 ## 📁 Project Structure
 
+
 /HealthAndWellness/
 |
-|-- index.html       # Home page
-|-- diet.html        # Diet and nutrition page
-|-- bmi.html         # BMI calculator
-|-- exercise.html    # Exercise and fitness content
-`-- blog.html        # Blog/news page
+|-- index.html # Home page
+|-- diet.html # Diet and nutrition page
+|-- bmi.html # BMI calculator
+|-- exercise.html # Exercise and fitness content
+`-- blog.html # Blog/news page
 
 
 
