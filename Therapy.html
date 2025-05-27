@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health and Wellness</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        /* Top Section Styling */
+        .top-section {
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            padding: 15px;
+        }
+        .logo img {
+            height: 100px;
+            width: 250px;
+        }
+        /* Contact Info Styling */
+        .contact-info {
+            flex-grow: 1;
+            background-color: #2a5d94;
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            border-radius: 0 0 0 60px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 60%;
+            font-size: 18px;
+        }
+        .contact-info i {
+            margin-right: 9px;
+        }
+        .contact-info span {
+            margin-left: 19px;
+        }
+        /* Navbar Styling */
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            margin: 0 0 0 auto;
+            margin-top: 50px;
+            padding: 5px 0px;
+        }
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+        .nav a:hover {
+            color: #2a5d94;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropbtn {
+            cursor: pointer;
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 150px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            transition: all .3s ease;
+            border-radius: 5px;
+        }
+        .dropdown-content a {
+            color: #333;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+            font-size: 14px;
+            transition: all .3s ease;
+        }
+        .dropdown-content a:hover {
+            background: linear-gradient(to right, #2a5d94, #7484cb);
+            color: #fff;
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown:hover .dropbtn {
+            color: #2a5d94;
+        }
+        .content h1 {
+            text-align: center;
+            padding: 10px;
+            font-size: 35px;
+            background-color: #2a5d94;
+            color: white;
+        }
+        .content h2 {
+            color: #2a5d94;
+        }
+        .t {
+            margin: 0 50px;
+            line-height: 1.6;
+        }
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .image-gallery img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            margin: 10px 30px;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .top-section {
+                flex-direction: column;
+                align-items: center;
+            }
+            .contact-info {
+                justify-content: center;
+                text-align: center;
+            }
+            .nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            .content .overlay h1 {
+                font-size: 2.5rem;
+            }
+            .content .overlay p {
+                font-size: 1rem;
+            }
+        }
+        /* footer */
+        footer {
+            margin-top: 30px;
+            background-color: white;
+            color: #2a5d94;
+            padding: 40px 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Section -->
+    <div class="top-section">
+        <div class="logo">
+            <img src="OG_LOGO.jpeg" alt="Logo">
+        </div>
+        <div class="contact-info">
+            <i class="fas fa-envelope">
+            </i>support@health&amp;wellness.com
+            <span><i class="ri-phone-fill"></i>Inquiry: (+91) 91517 15158
+            </span>
+        </div>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="bmical.html">BMI Calculator</a>
+            <div class="dropdown">
+                <p style="display: inline;" class="dropbtn">Services</p> <!-- Dropdown trigger -->
+                <div class="dropdown-content">
+                    <a href="trainer.html">Trainer Appointment</a>
+                    <a href="bloodTest.html">Blood Test</a>
+                    <a href="diet.html">Diet Plans</a>
+                </div>
+            </div>
+            <a href="News.html">News</a>
+            <a href="Therapy.html">Therapy</a>
+            <a href="Exercise.html">Integrative Workouts</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="contactUs.html">Contact Us</a>
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Therapies</h1>
+        <h2 class="t">Physical Therapy</h2>
+        <br>
+        <p class="t">
+            Physical therapy is a healthcare discipline focused on enhancing movement, functionality, and overall
+            quality of life through expert-guided techniques. It aids in recovery from injuries, surgeries, and chronic
+            conditions.
+        </p>
+        <ul class="t">
+            <li><strong>Key Areas:</strong>
+                <ul>
+                    <li>Pain Management: Alleviating discomfort through targeted exercises and manual therapy.</li>
+                    <li>Mobility Improvement: Enhancing range of motion and flexibility.</li>
+                    <li>Strength Building: Boosting muscle endurance and physical resilience.</li>
+                    <li>Posture and Balance: Addressing alignment issues and improving stability.</li>
+                </ul>
+            </li>
+            <li><strong>Conditions Treated:</strong>
+                Sports injuries, joint disorders like arthritis, neurological impairments (e.g., stroke recovery), and
+                post-surgical rehabilitation.
+            </li>
+            <li><strong>Benefits:</strong>
+                Restores physical independence, reduces pain and medication dependency, prevents injury recurrence, and
+                boosts overall health and functionality.
+            </li>
+            <li><strong>Techniques Used:</strong>
+                Manual therapy (hands-on manipulation of soft tissues), exercise therapy (customized regimens for
+                strength and mobility), and assistive equipment (use of orthotics and adaptive tools).
+            </li>
+        </ul>
+        <div class="image-gallery">
+            <img alt="Phy1" height="200" src="phy3.jpg" width="300" />
+            <img alt="Phy2" height="200" src="phy2.jpg" width="300" />
+            <img alt="Phy3" height="200" src="phy1.jpg" width="300" />
+            <img alt="Phy4" height="200" src="phy4.jpg" width="300" />
+        </div>
+        <h2 class="t">Mental Therapy</h2>
+        <br>
+        <p class="t">
+            Mental therapy, or psychotherapy, helps individuals manage psychological, emotional, and behavioral
+            challenges
+            through trained professionals like psychologists and counselors.
+        </p>
+        <ul class="t">
+            <li><strong>Techniques:</strong>
+                <ul>
+                    <li>Mindfulness: Enhances calm and emotional regulation.</li>
+                    <li>Behavior Modification: Encourages positive actions.</li>
+                    <li>Narrative Therapy: Empowers by reframing personal stories.</li>
+                    <li>Creative Therapies: Healing through art and music.</li>
+                </ul>
+            </li>
+            <li><strong>Conditions Treated:</strong>
+                Depression, anxiety, PTSD, OCD, addiction, and grief.
+            </li>
+            <li><strong>Benefits:</strong>
+                Better emotional regulation, interpersonal skills, and self-awareness.
+            </li>
+            <li><strong>Formats:</strong>
+                Individual, group, couples, and online therapy.
+            </li>
+            <li><strong>Getting Started:</strong>
+                Define goals, find a qualified therapist, choose a modality, and attend regularly.
+            </li>
+        </ul>
+        <div class="image-gallery">
+            <img alt="img1" height="200" src="mt1.jpg" width="300" />
+            <img alt="img2" height="200" src="mt3.jpg" width="300" />
+            <img alt="img3" height="200" src="mt2.avif" width="300" />
+            <img alt="img4" height="200" src="mt4.jpg" width="300" />
+        </div>
+        <h2 class="t">Massage Therapy</h2>
+        <br>
+        <p class="t">
+            Massage therapy involves the manipulation of soft tissues to relieve stress, reduce pain, and improve
+            physical and mental well-being. It is performed by licensed professionals using various techniques.
+        </p>
+        <ul class="t">
+            <li><strong>Techniques:</strong>
+                Swedish, deep tissue, hot stone, aromatherapy, and sports massage.
+            </li>
+            <li><strong>Benefits:</strong>
+                Relieves muscle tension, reduces stress, improves circulation, and enhances relaxation.
+            </li>
+            <li><strong>Conditions Treated:</strong>
+                Chronic pain, injuries, headaches, and stress-related disorders.
+            </li>
+            <li><strong>Getting Started:</strong>
+                Choose a certified therapist, discuss your needs, and schedule regular sessions for optimal results.
+            </li>
+        </ul>
+        <div class="image-gallery">
+            <img alt="Img1" height="200" src="m_t1.jpeg" width="300" />
+            <img alt="Img2" height="200" src="m_t2.jpg" width="300" />
+            <img alt="Img3" height="200" src="m_t3.jpg" width="300" />
+            <img alt="Img4" height="200" src="m_t4.jpg" width="300" />
+        </div>
+    </div>
+    <!--footer-->
+    <footer>
+        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 30px;"> <!-- Added gap for spacing -->
+            <!-- About Section -->
+            <div style="flex: 1; min-width: 250px; display: flex; flex-direction: column; gap: 15px;">
+                <h3>About Health & Wellness</h3>
+                <p style="line-height: 1.6;">At Health & Wellness, we believe in empowering individuals to live a
+                    healthy and balanced life. With personalized fitness plans, expert consultations, and support, we
+                    guide you every step of the way toward a healthier future.</p>
+            </div>
+            <!-- Quick Links Section -->
+            <div style="flex: 1; min-width: 250px;">
+                <h3>Quick Links</h3>
+                <ul style="list-style: none; padding: 0;display: flex;flex-direction: column; gap: 15px;">
+                    <!-- Added margin for better spacing -->
+                    <li><a href="index.html" style="color: #2a5d94; text-decoration: none;">Home</a></li>
+                    <li><a href="bmical.html" style="color: #2a5d94; text-decoration: none;">BMI Calculator</a></li>
+                    <li><a href="trainer.html" style="color: #2a5d94; text-decoration: none;">Trainer Appointment</a>
+                    </li>
+                    <li><a href="bloodTest.html" style="color: #2a5d94; text-decoration: none;">Blood Test</a></li>
+                    <li><a href="diet.html" style="color: #2a5d94; text-decoration: none;">Diet Plans</a></li>
+                    <li><a href="News.html" style="color: #2a5d94; text-decoration: none;">News</a></li>
+                    <li><a href="contactUs.html" style="color: #2a5d94; text-decoration: none;">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- Contact Section -->
+            <div style="flex: 1; min-width: 250px;">
+                <h3 style="margin-left: 40px;">Contact Us</h3>
+                <ul
+                    style="list-style: none; display: flex; flex-direction: column; gap: 13px; justify-content: flex-start; margin: 15px 0;">
+                    <!-- Added margin for better spacing -->
+                    <li>Email: <a href="mailto:support@health&wellness.com"
+                            style="color: #2a5d94; text-decoration: none;">support@health&wellness.com</a></li>
+                    <li>Phone: <a href="tel:+919151715158" style="color: #2a5d94; text-decoration: none;">(+91) 91517
+                            15158</a></li>
+                    <li>Address: Health & Wellness Center, 123 Wellness Street, Health City, India</li>
+                </ul>
+            </div>
+            <!-- Our Social Handles Section -->
+            <div style="flex: 1; min-width: 250px;">
+                <h3>Our Social Handles</h3>
+                <ul style="list-style: none; padding: 0; margin: 15px 0; display: flex; gap: 25px;">
+                    <!-- Gap added to icons -->
+                    <li>
+                        <a href="#" style="color: #2a5d94; font-size: 24px;">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" style="color: #2a5d94; font-size: 24px;">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" style="color: #2a5d94; font-size: 24px;">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" style="color: #2a5d94; font-size: 24px;">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div style="text-align: center; margin-top: 30px; font-size: 14px;">
+        <p>&copy; 2024 Health & Wellness. All rights reserved.</p>
+    </div>
+</body>
+</html>

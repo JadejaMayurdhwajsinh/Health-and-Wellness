@@ -1,0 +1,302 @@
+<html>
+<head>
+  <title>News</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+    body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background: white;
+        }
+        /* Navbar */
+        .top-section {
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            padding: 15px;
+        }
+        .logo img {
+            height: 100px;
+            width: 250px;
+        }
+        /* Contact Info Styling */
+        .contact-info {
+            flex-grow: 1;
+            background-color: #2a5d94;
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            border-radius: 0 0 0 60px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 60%;
+            font-size: 18px;
+        }
+        .contact-info i {
+            margin-right: 9px;
+        }
+        .contact-info span {
+            margin-left: 19px;
+        }
+        /* Navbar Styling */
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            margin: 0 0 0 auto;
+            margin-top: 50px;
+            padding: 5px 0px;
+        }
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+        .nav a:hover {
+            color: #2a5d94;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropbtn {
+            cursor: pointer;
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 150px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            transition: all .3s ease;
+            border-radius: 5px;
+        }
+        .dropdown-content a {
+            color: #333;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+            font-size: 14px;
+            transition: all .3s ease;
+        }
+        .dropdown-content a:hover {
+            background: linear-gradient(to right, #2a5d94, #7484cb);
+            color: #fff;
+            transform: scale(1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown:hover .dropbtn {
+            color: #2a5d94;
+        }
+    .news-section h2 {
+      text-align: center;
+      padding: 10px;
+      font-size: 35px;
+      background-color: #2a5d94;
+      color: white;
+    }.news-article {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin: 20px auto;
+      max-width: 750px;
+    }.news-article h3 {
+      color: #2a5d94;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }.news-article p {
+      color: #666;
+      font-size: 17px;
+      line-height: 1.5;
+    }.stats {
+      margin-top: 8px;
+      font-size: 13px;
+      color: #2a5d94;
+    }.stats span {
+      margin-right: 15px;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: bold;
+      color: #333;
+    }.news-article img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-top: 15px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    /* footer */
+    footer {
+            margin-top: 30px;
+            background-color: white;
+            color: #2a5d94;
+            padding: 40px 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            display: flex;
+            gap: 10px;
+        }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div class="top-section">
+    <div class="logo">
+        <a href="index.html">
+            <img alt="Logo" src="OG_LOGO.jpeg" />
+        </a>
+    </div>
+    <div class="contact-info">
+        <i class="fas fa-envelope"></i>support@health&amp;wellness.com
+        <span><i class="ri-phone-fill"></i>Inquiry: (+91) 91517 15158</span>
+    </div>
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="bmical.html">BMI Calculator</a>
+        <div class="dropdown">
+            <p class="dropbtn" style="display: inline;">Services</p>
+            <div class="dropdown-content">
+                <a href="trainer.html">Trainer Appointment</a>
+                <a href="bloodTest.html">Blood Test</a>
+                <a href="diet.html">Diet Plans</a>
+            </div>
+        </div>
+        <a href="News.html">News</a>
+        <a href="Therapy.html">Therapy</a>
+        <a href="Exercise.html">Integrative Workouts</a>
+        <a href="AboutUs.html">About Us</a>
+        <a href="contactUs.html">Contact Us</a>
+        <a href="login.html">Login</a>
+    </div>
+  </div>
+  <div class="news-section">
+    <h2>News related to Health & Wellness</h2>
+    <div class="news-article">
+      <h3>COVID-19 Pandemic: A Long-Term Mental Health Crisis</h3>
+      <p>
+        The COVID-19 pandemic has created a long-lasting mental health crisis. A study from The Lancet in 2023
+         revealed that global mental health conditions worsened, with depression and anxiety being the most reported.
+          Social isolation, job losses, and uncertainty about the future significantly contributed to the increase.
+        <br><br>
+        Experts predict that addressing the psychological aftermath of the pandemic will be crucial in the coming decades.
+        <br><br>
+        <span>Reports: 53% increase in depression worldwide since 2019</span>
+        <span>40 million Americans experiencing anxiety disorder post-pandemic</span>
+      </p>
+      <img src="covid1.jpg" alt="COVID-19 Mental Health Effects">
+    </div>
+    <div class="news-article">
+      <h3>Boosting Heart Health: Benefits of the Mediterranean Diet</h3>
+      <p>
+        The Mediterranean diet, known for its high intake of fruits, vegetables, and healthy fats, has gained more recognition as a heart-healthy dietary choice. Research conducted by the American Heart Association (AHA) highlights that individuals who follow the Mediterranean diet have a 30% lower risk of heart disease mortality.
+        <br><br>
+        <span>Studies: 30% reduction in cardiovascular diseases</span>
+        <span>Increased intake of Omega-3s linked to improved heart health</span>
+      </p>
+      <img src="heart.avif" alt="Mediterranean Diet and Heart Health">
+    </div>
+    <div class="news-article">
+      <h3>Sexual Health Education: Reducing STIs and Teenage Pregnancies</h3>
+      <p>
+        Comprehensive sexual health education is essential in promoting safe behaviors and informed decisions. Countries that have implemented national sex education programs have seen a notable decline in sexually transmitted infections (STIs) and unintended pregnancies among teenagers.
+        <br><br>
+        <span>30% decline in teen pregnancies in regions with comprehensive sex education</span>
+        <span>Decrease in STI rates by 15% in the past decade globally</span>
+      </p>
+      <img src="std.jpg" alt="Sexual Health Education Programs">
+    </div>
+    <div class="news-article">
+      <h3>Exercise and Mental Health: The Connection You Should Know</h3>
+      <p>
+        Recent research shows a strong link between regular physical activity and improved mental health. Exercise is proven to lower symptoms of depression and anxiety by releasing endorphins and improving brain function. Individuals who engage in physical activities such as running, yoga, or team sports report higher satisfaction with their emotional well-being.
+        <br><br>
+        <span>Studies: 25% reduction in depression symptoms after 12 weeks of exercise</span>
+        <span>Active individuals report 40% less anxiety compared to sedentary lifestyle</span>
+      </p>
+      <img src="exe.jpg" alt="Exercise and Mental Health">
+    </div>
+  </div>
+  <!--footer-->
+<footer>
+  <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 30px;">
+      <!-- About Section -->
+      <div style="flex: 1; min-width: 250px; display: flex; flex-direction: column; gap: 15px;">
+          <h3>About Health & Wellness</h3>
+          <p style="line-height: 1.6;">At Health & Wellness, we believe in empowering individuals to live a
+              healthy and balanced life. With personalized fitness plans, expert consultations, and support, we
+              guide you every step of the way toward a healthier future.</p>
+          </div>
+      <!-- Quick Links Section -->
+      <div style="flex: 1; min-width: 250px;">
+          <h3>Quick Links</h3>
+          <ul style="list-style: none; padding: 0;display: flex;flex-direction: column; gap: 15px;">           
+              <li><a href="index.html" style="color: #2a5d94; text-decoration: none;">Home</a></li>
+              <li><a href="bmical.html" style="color: #2a5d94; text-decoration: none;">BMI Calculator</a></li>
+              <li><a href="trainer.html" style="color: #2a5d94; text-decoration: none;">Trainer Appointment</a>
+              </li>
+              <li><a href="bloodTest.html" style="color: #2a5d94; text-decoration: none;">Blood Test</a></li>
+              <li><a href="diet.html" style="color: #2a5d94; text-decoration: none;">Diet Plans</a></li>
+              <li><a href="News.html" style="color: #2a5d94; text-decoration: none;">News</a></li>
+              <li><a href="contactUs.html" style="color: #2a5d94; text-decoration: none;">Contact Us</a></li>
+          </ul>
+      </div>
+      <!-- Contact Section -->
+      <div style="flex: 1; min-width: 250px;">
+          <h3 style="margin-left: 40px;">Contact Us</h3>
+          <ul
+              style="list-style: none; display: flex; flex-direction: column; gap: 13px; justify-content: flex-start; margin: 15px 0;">
+              <li>Email: <a href="mailto:support@health&wellness.com"
+                      style="color: #2a5d94; text-decoration: none;">support@health&wellness.com</a></li>
+              <li>Phone: <a href="tel:+919151715158" style="color: #2a5d94; text-decoration: none;">(+91) 91517
+                      15158</a></li>
+              <li>Address: Health & Wellness Center, 123 Wellness Street, Health City, India</li>
+          </ul>
+      </div>
+      <!-- Our Social Handles Section -->
+      <div style="flex: 1; min-width: 250px;">
+          <h3>Our Social Handles</h3>
+          <ul style="list-style: none; padding: 0; margin: 15px 0; display: flex; gap: 25px;">
+              <!-- Gap added to icons -->
+              <li><a href="#" style="color: #2a5d94; font-size: 24px;">
+                      <i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li><a href="#" style="color: #2a5d94; font-size: 24px;">
+                      <i class="fab fa-twitter"></i></a>
+              </li>
+              <li><a href="#" style="color: #2a5d94; font-size: 24px;">
+                      <i class="fab fa-instagram"></i></a>
+              </li>
+              <li><a href="#" style="color: #2a5d94; font-size: 24px;">
+                      <i class="fab fa-linkedin-in"></i></a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</footer>
+<div style="text-align: center; margin-top: 30px; font-size: 14px;">
+  <p>&copy; 2024 Health & Wellness. All rights reserved.</p>
+</div>
+</body>
+</html>

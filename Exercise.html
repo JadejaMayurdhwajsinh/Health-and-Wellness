@@ -1,0 +1,324 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        Integrative Workouts
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        /* Top Section Styling */
+        .top-section {
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            padding: 15px;
+        }
+        .logo:hover{
+            cursor: pointer;
+        }
+        .logo img {
+            height: 100px;
+            width: 250px;
+        }
+        /* Contact Info Styling */
+        .contact-info {
+            flex-grow: 1;
+            background-color: #2a5d94;
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            border-radius: 0 0 0 60px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 60%;
+            font-size: 18px;
+        }
+        .contact-info i {
+            margin-right: 9px;
+        }
+        .contact-info span {
+            margin-left: 19px;
+        }
+        /* Navbar Styling */
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            margin: 0 0 0 auto;
+            margin-top: 50px;
+            padding: 5px 0px;
+        }
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+        .nav a:hover {
+            color: #2a5d94;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropbtn {
+            cursor: pointer;
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 150px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            transition: all .3s ease;
+            border-radius: 5px;
+        }
+        .dropdown-content a {
+            color: #333;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+            font-size: 14px;
+            transition: all .3s ease;
+        }
+        .dropdown-content a:hover {
+            background: linear-gradient(to right, #2a5d94, #7484cb);
+            color: #fff;
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown:hover .dropbtn {
+            color: #2a5d94;
+        }
+        /* Exercise Page Styling */
+        .header {
+            text-align: center;
+            background-color: #2a5d94;
+            color: white;
+            padding: 0.2px;
+            font-size: 15px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .exercise-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        .exercise-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 15px 7px;
+            /* overflow: hidden; */
+        }
+        .exercise-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: fill;
+        }
+        .exercise-card h2 {
+            font-size: 1.5em;
+            margin: 16px;
+            color: #2a5d94;
+        }
+        .exercise-card p {
+            margin: 0 16px 16px;
+            color: #666;
+        }
+        @media (min-width: 768px) {
+            .exercise-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (min-width: 1024px) {
+            .exercise-grid {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+        
+        /* footer */
+        footer {
+            margin-top: 30px;
+            background-color: white;
+            color: #2a5d94;
+            padding: 40px 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Section -->
+    <div class="top-section">
+        <div class="logo">
+            <a href="index.html">
+                <img alt="Logo" src="OG_LOGO.jpeg" /></a>
+        </div>
+        <div class="contact-info">
+            <i class="fas fa-envelope"></i>support@health&amp;wellness.com
+            <span><i class="ri-phone-fill"></i>Inquiry: (+91) 91517 15158</span>
+        </div>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="bmical.html">BMI Calculator</a>
+            <div class="dropdown">
+                <p class="dropbtn" style="display: inline;">Services</p>
+                <!-- Dropdown trigger -->
+                <div class="dropdown-content">
+                    <a href="trainer.html">Trainer Appointment</a>
+                    <a href="bloodTest.html">Blood Test</a>
+                    <a href="diet.html">Diet Plans</a>
+                </div>
+            </div>
+            <a href="News.html">News</a>
+            <a href="Therapy.html">Therapy</a>
+            <a href="Exercise.html">Integrative Workouts</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="contactUs.html">Contact Us</a>
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+    <div class="header">
+        <h1>Integrative Workouts for a Fit and Healthy Body</h1>
+    </div>
+    <div class="container">
+        <div class="exercise-grid">
+            <div class="exercise-card">
+                <img alt="Person doing yoga in a serene outdoor setting" height="200" src="yoga.jpg" width="300" />
+                <h2> Yoga</h2>
+                <p>Yoga is a holistic practice that combines physical postures, breathing exercises, and meditation to
+                    improve flexibility, strength, and mental clarity.</p>
+            </div>
+            <div class="exercise-card">
+                <img alt="Person jogging in a park during sunrise" height="200" src="jogging.jpg" width="300" />
+                <h2>Jogging</h2>
+                <p>Jogging is a cardiovascular exercise that helps improve heart health, burn calories, and boost
+                    overall fitness. It's a great way to enjoy the outdoors.</p>
+            </div>
+            <div class="exercise-card">
+                <img alt="Person swimming in a pool with clear blue water" height="200" src="swim.jpg" width="300" />
+                <h2>Swimming</h2>
+                <p>Swimming is a full-body workout that enhances cardiovascular health, builds muscle strength, and
+                    improves flexibility without putting stress on the joints.</p>
+            </div>
+            <div class="exercise-card">
+                <img alt="Person cycling on a scenic mountain trail" height="200" src="cycle.jpg" width="300" />
+                <h2> Cycling</h2>
+                <p>Cycling is an excellent way to improve cardiovascular fitness, strengthen leg muscles, and enjoy the
+                    beauty of nature. It's also a low-impact exercise.</p>
+            </div>
+            <div class="exercise-card">
+                <img alt="Person performing tai chi in a peaceful garden" height="200" src="taichi.jpg" width="300" />
+                <h2>Tai Chi</h2>
+                <p>Tai Chi is a gentle form of martial arts that focuses on slow, deliberate movements and deep
+                    breathing. It helps improve balance, flexibility, and mental focus.</p>
+            </div>
+            <div class="exercise-card">
+                <img alt="Person hiking on a forest trail with a backpack" height="200" src="hiking.jpg" width="300" />
+                <h2>Hiking</h2>
+                <p>Hiking is a great way to explore nature while getting a good workout. It improves cardiovascular
+                    health, strengthens muscles, and reduces stress.</p>
+            </div>
+            <div class="exercise-card">
+                <img alt="Person dancing in a studio with a group" height="200" src="dancing.jpg" width="300" />
+                <h2>Dancing</h2>
+                <p>Dancing is a fun and social way to stay fit. It improves cardiovascular health, enhances
+                    coordination, and boosts mood through rhythmic movements.</p>
+            </div>
+            <div class="exercise-card">
+                <img alt="Person performing pilates exercises on a mat" height="200" src="pilates.jpg" width="300" />
+                <h2>Pilates</h2>
+                <p>Pilates focuses on core strength, flexibility, and overall body awareness. It helps improve posture,
+                    balance, and muscle tone through controlled movements.</p>
+            </div>
+            <div class="exercise-card">
+                <img alt="Person practicing martial arts in a dojo" height="200" src="martial.jpg" width="300" />
+                <h2>Martial Arts</h2>
+                <p>Martial arts training enhances physical fitness, self-discipline, and mental focus. It includes
+                    various styles like karate, judo, and taekwondo.</p>
+            </div>
+        </div>
+    </div>
+<!--footer-->
+<footer>
+    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 30px;">
+        <!-- About Section -->
+        <div style="flex: 1; min-width: 250px; display: flex; flex-direction: column; gap: 15px;">
+            <h3>About Health & Wellness</h3>
+            <p style="line-height: 1.6;">At Health & Wellness, we believe in empowering individuals to live a
+                healthy and balanced life. With personalized fitness plans, expert consultations, and support, we
+                guide you every step of the way toward a healthier future.</p>
+            </div>
+        <!-- Quick Links Section -->
+        <div style="flex: 1; min-width: 250px;">
+            <h3>Quick Links</h3>
+            <ul style="list-style: none; padding: 0;display: flex;flex-direction: column; gap: 15px;">           
+                <li><a href="index.html" style="color: #2a5d94; text-decoration: none;">Home</a></li>
+                <li><a href="bmical.html" style="color: #2a5d94; text-decoration: none;">BMI Calculator</a></li>
+                <li><a href="trainer.html" style="color: #2a5d94; text-decoration: none;">Trainer Appointment</a>
+                </li>
+                <li><a href="bloodTest.html" style="color: #2a5d94; text-decoration: none;">Blood Test</a></li>
+                <li><a href="diet.html" style="color: #2a5d94; text-decoration: none;">Diet Plans</a></li>
+                <li><a href="News.html" style="color: #2a5d94; text-decoration: none;">News</a></li>
+                <li><a href="contactUs.html" style="color: #2a5d94; text-decoration: none;">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Contact Section -->
+        <div style="flex: 1; min-width: 250px;">
+            <h3 style="margin-left: 40px;">Contact Us</h3>
+            <ul
+                style="list-style: none; display: flex; flex-direction: column; gap: 13px; justify-content: flex-start; margin: 15px 0;">
+                <li>Email: <a href="mailto:support@health&wellness.com"
+                        style="color: #2a5d94; text-decoration: none;">support@health&wellness.com</a></li>
+                <li>Phone: <a href="tel:+919151715158" style="color: #2a5d94; text-decoration: none;">(+91) 91517
+                        15158</a></li>
+                <li>Address: Health & Wellness Center, 123 Wellness Street, Health City, India</li>
+            </ul>
+        </div>
+        <!-- Our Social Handles Section -->
+        <div style="flex: 1; min-width: 250px;">
+            <h3>Our Social Handles</h3>
+            <ul style="list-style: none; padding: 0; margin: 15px 0; display: flex; gap: 25px;">
+                <!-- Gap added to icons -->
+                <li><a href="#" style="color: #2a5d94; font-size: 24px;">
+                        <i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#" style="color: #2a5d94; font-size: 24px;">
+                        <i class="fab fa-twitter"></i></a>
+                <li><a href="#" style="color: #2a5d94; font-size: 24px;">
+                        <i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" style="color: #2a5d94; font-size: 24px;">
+                        <i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+    </div>
+  </footer>
+  <div style="text-align: center; margin-top: 30px; font-size: 14px;">
+    <p>&copy; 2024 Health & Wellness. All rights reserved.</p>
+</body>
+</html>

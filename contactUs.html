@@ -1,0 +1,347 @@
+<html>
+<head>
+    <title>
+        Contact Us
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background: white;
+        }
+        /* Navbar */
+        .top-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .logo {
+            padding: 15px;
+        }
+        .logo img {
+            height: 100px;
+            width: 250px;
+        }
+        /* Contact Info Styling */
+        .contact-info {
+            flex-grow: 1;
+            background-color: #2a5d94;
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            border-radius: 0 0 0 60px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 60%;
+            font-size: 18px;
+        }
+        .contact-info i {
+            margin-right: 9px;
+        }
+        .contact-info span {
+            margin-left: 19px;
+        }
+        /* Navbar Styling */
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            margin: 0 0 0 auto;
+            margin-top: 50px;
+            padding: 5px 0px;
+        }
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+        .nav a:hover {
+            color: #2a5d94;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropbtn {
+            cursor: pointer;
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 150px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            transition: all .3s ease;
+            border-radius: 5px;
+        }
+        .dropdown-content a {
+            color: #333;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+            font-size: 14px;
+            transition: all .3s ease;
+        }
+        .dropdown-content a:hover {
+            background: linear-gradient(to right, #2a5d94, #7484cb);
+            color: #fff;
+            transform: scale(1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown:hover .dropbtn {
+            color: #2a5d94;
+        }
+        /* Contact Us Section */
+        .contact-us {
+            flex-grow: 1;
+        }
+        .contact-us h2 {
+            text-align: center;
+            padding: 12px;
+            font-size: 35px;
+            background-color: #2a5d94;
+            color: white;
+            margin: -0.5px;
+            margin-bottom: 40px;
+        }
+        .welcome-text {
+            text-align: center;
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6) ,inset 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #2a5d94;
+            font-weight: bold;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group textarea {
+            resize: none;
+            height: 120px;
+        }.form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #2a5d94;
+            outline: none;
+            box-shadow: 0 0 5px rgba(42, 93, 148, 0.5);
+        }.form-group button {
+            background: #2a5d94;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }.form-group button:hover {
+            background: #1e4370;
+        }.additional-content {
+            background-color: #fff;
+            padding: 40px;
+            text-align: center;
+        }.additional-content h2 {
+            color: #2a5d94;
+            margin-bottom: 15px;
+        }.additional-content p {
+            color: #333;
+            font-size: 16px;
+            line-height: 1.6;
+        }.additional-content ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            text-align: left;
+            display: inline-block;
+        }.additional-content li {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        /* footer */
+        footer {
+            margin-top: 30px;
+            background-color: white;
+            color: #2a5d94;
+            padding: 40px 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="top-section">
+        <div class="logo">
+            <a href="index.html">
+                <img alt="Logo" src="OG_LOGO.jpeg" /></a>
+        </div>
+        <div class="contact-info">
+            <i class="fas fa-envelope"></i>
+            support@health&amp;wellness.com
+            <span>
+                <i class="ri-phone-fill"></i>
+                Inquiry: (+91) 91517 15158
+            </span>
+        </div>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="bmical.html">BMI Calculator</a>
+            <div class="dropdown">
+                <p class="dropbtn" style="display: inline;">Services</p>
+                <div class="dropdown-content">
+                    <a href="trainer.html">Trainer Appointment</a>
+                    <a href="bloodTest.html">Blood Test</a>
+                    <a href="diet.html">Diet Plans</a>
+                </div>
+            </div>
+            <a href="News.html">News</a>
+            <a href="Therapy.html">Therapy</a>
+            <a href="Exercise.html">Integrative Workouts</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="contactUs.html">Contact Us</a>
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+    <!-- Contact Us Section -->
+    <div class="contact-us">
+        <h2>Contact Us</h2>
+        <p class="welcome-text">
+            Have questions or need support? Reach out to us. We are here to help you on your journey to better health
+            and wellness!</p>
+        <div class="form-container">
+            <form action="submitForm.html" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" placeholder="Your Name" required="" type="text" />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" placeholder="Your Email" required="" type="email" />
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your Message" required=""></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Additional Content Section -->
+    <div class="additional-content">
+        <h2>Why Choose Us?</h2>
+        <p>We are dedicated to providing the best health and wellness services to help you achieve your goals. Here are
+            some reasons why you should choose us:</p>
+        <ul>
+            <li>Experienced and certified trainers</li>
+            <li>Personalized diet plans</li>
+            <li>Comprehensive blood tests</li>
+            <li>24/7 customer support</li>
+            <li>State-of-the-art facilities</li>
+        </ul>
+    </div>
+    <!--footer-->
+    <footer>
+        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 30px;">
+            <!-- About Section -->
+            <div style="flex: 1; min-width: 250px; display: flex; flex-direction: column; gap: 15px;">
+                <h3>About Health & Wellness</h3>
+                <p style="line-height: 1.6;">At Health & Wellness, we believe in empowering individuals to live a
+                    healthy and balanced life. With personalized fitness plans, expert consultations, and support, we
+                    guide you every step of the way toward a healthier future.</p>
+            </div>
+            <!-- Quick Links Section -->
+            <div style="flex: 1; min-width: 250px;">
+                <h3>Quick Links</h3>
+                <ul style="list-style: none; padding: 0;display: flex;flex-direction: column; gap: 15px;">
+                    <li><a href="index.html" style="color: #2a5d94; text-decoration: none;">Home</a></li>
+                    <li><a href="bmical.html" style="color: #2a5d94; text-decoration: none;">BMI Calculator</a></li>
+                    <li><a href="trainer.html" style="color: #2a5d94; text-decoration: none;">Trainer Appointment</a>
+                    </li>
+                    <li><a href="bloodTest.html" style="color: #2a5d94; text-decoration: none;">Blood Test</a></li>
+                    <li><a href="diet.html" style="color: #2a5d94; text-decoration: none;">Diet Plans</a></li>
+                    <li><a href="News.html" style="color: #2a5d94; text-decoration: none;">News</a></li>
+                    <li><a href="contactUs.html" style="color: #2a5d94; text-decoration: none;">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- Contact Section -->
+            <div style="flex: 1; min-width: 250px;">
+                <h3 style="margin-left: 40px;">Contact Us</h3>
+                <ul
+                    style="list-style: none; display: flex; flex-direction: column; gap: 13px; justify-content: flex-start; margin: 15px 0;">
+                    <li>Email: <a href="mailto:support@health&wellness.com"
+                            style="color: #2a5d94; text-decoration: none;">support@health&wellness.com</a></li>
+                    <li>Phone: <a href="tel:+919151715158" style="color: #2a5d94; text-decoration: none;">(+91) 91517
+                            15158</a></li>
+                    <li>Address: Health & Wellness Center, 123 Wellness Street, Health City, India</li>
+                </ul>
+            </div>
+            <!-- Our Social Handles Section -->
+            <div style="flex: 1; min-width: 250px;">
+                <h3>Our Social Handles</h3>
+                <ul style="list-style: none; padding: 0; margin: 15px 0; display: flex; gap: 25px;">
+                    <!-- Gap added to icons -->
+                    <li>
+                        <a href="#" style="color: #2a5d94; font-size: 24px;">
+                            <i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" style="color: #2a5d94; font-size: 24px;">
+                            <i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" style="color: #2a5d94; font-size: 24px;">
+                            <i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" style="color: #2a5d94; font-size: 24px;">
+                            <i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div style="text-align: center; margin-top: 30px; font-size: 14px;">
+        <p>&copy; 2024 Health & Wellness. All rights reserved.</p>
+</body>
+</html>

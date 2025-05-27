@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("./624111.webp") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+    align-items: center;
+    height: 100vh;
+}
+.login-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+.login-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2a5d94;
+}
+.login-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #2a5d94;
+}
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+}
+.login-container input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    background-color: #2a5d94;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.login-container input[type="submit"]:hover {
+    background-color: #1f4b7e;
+}
+.login-container p {
+    text-align: center;
+    margin: 10px 0;
+    color: #555;
+}
+.login-container a {
+    color: #2a5d94;
+    text-decoration: none;
+}
+.login-container a:hover {
+    text-decoration: underline;
+}

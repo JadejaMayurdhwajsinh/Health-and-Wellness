@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <title>Blood Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background: white;
+        }
+        /*  Navbar */
+        .top-section {
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            padding: 15px;
+        }
+        .logo img {
+            height: 100px;
+            width: 250px;
+        }
+        /* Contact Info Styling */
+        .contact-info {
+            flex-grow: 1;
+            background-color: #2a5d94;
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            border-radius: 0 0 0 60px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 60%;
+            font-size: 18px;
+        }
+        .contact-info i {
+            margin-right: 9px;
+        }
+        .contact-info span {
+            margin-left: 19px;
+        }
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+        }h1 {
+            text-align: center;
+            color: grey;
+        }.form-group {
+            margin-bottom: 15px;
+        }label {
+            display: block;
+            margin-bottom: 5px;
+            color: grey;
+        } input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #2a5d94;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }.message {
+            margin-top: 15px;
+            text-align: center;
+            font-size: 14px;
+            color: black;
+        }.content h1{
+            text-align: center;
+            padding: 10px;
+            font-size: 35px;
+            background-color: #2a5d94;
+            color: white;
+        }.content p{
+            margin: 30px;
+            font-size: 20px;
+        }
+        /* Navbar Styling */
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            margin: 0 0 0 auto;
+            margin-top: 50px;
+            padding: 5px 0px;
+        }
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+        .nav a:hover {
+            color: #2a5d94;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropbtn {
+            cursor: pointer;
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 150px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            transition: all .3s ease;
+            border-radius: 5px;
+        }
+        .dropdown-content a {
+            color: #333;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+            font-size: 14px;
+            transition: all .3s ease;
+        }
+        .dropdown-content a:hover {
+            background: linear-gradient(to right, #2a5d94, #7484cb);
+            color: #fff;
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown:hover .dropbtn {
+            color: #2a5d94;
+        }
+        /* footer */
+        footer {
+            margin-top: 30px;
+            background-color: white;
+            color: #2a5d94;
+            padding: 40px 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="top-section">
+        <div class="logo">
+            <a href="index.html">
+                <img alt="Logo" src="OG_LOGO.jpeg" /></a>
+        </div>
+        <div class="contact-info">
+            <i class="fas fa-envelope"></i>
+            support@health&amp;wellness.com
+            <span>
+                <i class="ri-phone-fill"></i>
+                Inquiry: (+91) 91517 15158
+            </span>
+        </div>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="bmical.html">BMI Calculator</a>
+            <div class="dropdown">
+                <p class="dropbtn" style="display: inline;">Services</p>
+                <div class="dropdown-content">
+                    <a href="trainer.html">Trainer Appointment</a>
+                    <a href="bloodTest.html">Blood Test</a>
+                    <a href="diet.html">Diet Plans</a>
+                </div>
+            </div>
+            <a href="News.html">News</a>
+            <a href="Therapy.html">Therapy</a>
+            <a href="Exercise.html">Integrative Workouts</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="contactUs.html">Contact Us</a>
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+    <div class="content">
+    <h1>Blood Test</h1>
+    <p>The Blood Test Checker is a simple tool that analyzes hemoglobin levels based on the user's age.
+        Users input their full name, age, and hemoglobin level, and the checker compares the provided values against
+        standard age-specific healthy hemoglobin ranges.
+        Depending on the results, it displays a message indicating whether the hemoglobin level is normal or below the
+        recommended range,
+        suggesting further medical consultation if necessary.</p>
+    </div>
+    <div class="container">
+        <h1>Blood Test Checker</h1>
+        <form id="bloodTestForm">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div class="form-group">
+                <label for="hemoglobin">Hemoglobin Level (g/dL)</label>
+                <input type="number" id="hemoglobin" name="hemoglobin" step="0.1" required>
+            </div>
+            <input type="submit" value="Check">
+        </form>
+        <div class="message" id="message"></div>
+    </div>
+    <!--footer-->
+    <footer>
+        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 30px;">
+            <!-- About Section -->
+            <div style="flex: 1; min-width: 250px; display: flex; flex-direction: column; gap: 15px;">
+                <h3>About Health & Wellness</h3>
+                <p style="line-height: 1.6;">At Health & Wellness, we believe in empowering individuals to live a
+                    healthy and balanced life. With personalized fitness plans, expert consultations, and support, we
+                    guide you every step of the way toward a healthier future.</p>
+            </div>
+            <!-- Quick Links Section -->
+            <div style="flex: 1; min-width: 250px;">
+                <h3>Quick Links</h3>
+                <ul style="list-style: none; padding: 0;display: flex;flex-direction: column; gap: 15px;">
+                    <li><a href="#" style="color: #2a5d94; text-decoration: none;">Home</a></li>
+                    <li><a href="bmical.html" style="color: #2a5d94; text-decoration: none;">BMI Calculator</a></li>
+                    <li><a href="trainer.html" style="color: #2a5d94; text-decoration: none;">Trainer Appointment</a>
+                    </li>
+                    <li><a href="bloodTest.html" style="color: #2a5d94; text-decoration: none;">Blood Test</a></li>
+                    <li><a href="diet.html" style="color: #2a5d94; text-decoration: none;">Diet Plans</a></li>
+                    <li><a href="News.html" style="color: #2a5d94; text-decoration: none;">News</a></li>
+                    <li><a href="contactUs.html" style="color: #2a5d94; text-decoration: none;">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- Contact Section -->
+            <div style="flex: 1; min-width: 250px;">
+                <h3 style="margin-left: 40px;">Contact Us</h3>
+                <ul
+                    style="list-style: none; display: flex; flex-direction: column; gap: 13px; justify-content: flex-start; margin: 15px 0;">
+                    <li>Email: <a href="mailto:support@health&wellness.com"
+                            style="color: #2a5d94; text-decoration: none;">support@health&wellness.com</a></li>
+                    <li>Phone: <a href="tel:+919151715158" style="color: #2a5d94; text-decoration: none;">(+91) 91517
+                            15158</a></li>
+                    <li>Address: Health & Wellness Center, 123 Wellness Street, Health City, India</li>
+                </ul>
+            </div>
+            <!-- Our Social Handles Section -->
+            <div style="flex: 1; min-width: 250px;">
+                <h3>Our Social Handles</h3>
+                <ul style="list-style: none; padding: 0; margin: 15px 0; display: flex; gap: 25px;">
+                    <!-- Gap added to icons -->
+                    <li><a href="#" style="color: #2a5d94; font-size: 24px;">
+                            <i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" style="color: #2a5d94; font-size: 24px;">
+                            <i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" style="color: #2a5d94; font-size: 24px;">
+                            <i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#" style="color: #2a5d94; font-size: 24px;">
+                            <i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div style="text-align: center; margin-top: 30px; font-size: 14px;">
+        <p>&copy; 2024 Health & Wellness. All rights reserved.</p>
+    </div>
+    <script src="bloodtest.js"></script>
+</body>
+</html>

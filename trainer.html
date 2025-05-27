@@ -1,0 +1,380 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        Trainer Appointment
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background: white;
+        }
+        /*  Navbar */
+        .top-section {
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            padding: 15px;
+        }
+        .logo:hover{
+            cursor: pointer;
+        }
+        .logo img {
+            height: 100px;
+            width: 250px;
+        }
+        /* Contact Info Styling */
+        .contact-info {
+            flex-grow: 1;
+            background-color: #2a5d94;
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            border-radius: 0 0 0 60px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 60%;
+            font-size: 18px;
+        }
+        .contact-info i {
+            margin-right: 9px;
+        }
+        .contact-info span {
+            margin-left: 19px;
+        }
+        /* Navbar Styling */
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            margin: 0 0 0 auto;
+            margin-top: 50px;
+            padding: 5px 0px;
+        }
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+        .nav a:hover {
+            color: #2a5d94;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropbtn {
+            cursor: pointer;
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 150px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            transition: all .3s ease;
+            border-radius: 5px;
+        }
+        .dropdown-content a {
+            color: #333;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+            font-size: 14px;
+            transition: all .3s ease;
+        }
+        .dropdown-content a:hover {
+            background: linear-gradient(to right, #2a5d94, #7484cb);
+            color: #fff;
+            transform: scale(1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);   
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown:hover .dropbtn {
+            color: #2a5d94;
+        }
+        .trainers-section {
+            text-align: center;
+            padding: 0 20px;
+            margin-top: -20px;
+        }
+        #meet-trainers {
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            font-size: 35px;
+            background-color: #2a5d94;
+            color: white;
+        }
+        .trainers-section p {
+            line-height: 1.5;
+            font-size: 18px;
+            color: #666;
+            margin-top: 4%;
+        }
+        .trainers {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        .trainer {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        .trainer img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .trainer h2 {
+            font-size: 24px;
+            color: #2a5d94;
+            margin: 10px 0;
+        }
+        .trainer h3 {
+            font-size: 18px;
+            color: #333;
+            margin: 10px 0;
+        }
+        .trainer p {
+            font-size: 16px;
+            color: #666;
+        }
+        .trainer button {
+            background-color: #2a5d94;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .trainer button:hover {
+            background-color: #1e3f6f;
+        }
+        @media (max-width: 768px) {
+            .trainers {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        /* footer */
+        footer {
+            margin-top: 30px;
+            background-color: white;
+            color: #2a5d94;
+            padding: 40px 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+    <script>
+        function bookTrainer(trainerName) {
+            alert(trainerName + " booking completed!");
+        }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <div class="top-section">
+        <div class="logo">
+            <a href="index.html">
+                <img alt="Logo" src="OG_LOGO.jpeg" />
+            </a>
+        </div>
+        <div class="contact-info">
+            <i class="fas fa-envelope">
+            </i>support@health&amp;wellness.com
+            <span><i class="ri-phone-fill"></i>Inquiry: (+91) 91517 15158
+            </span>
+        </div>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="bmical.html">BMI Calculator</a>
+            <div class="dropdown">
+                <p class="dropbtn" style="display: inline;">Services</p>
+                <!-- Dropdown trigger -->
+                <div class="dropdown-content">
+                    <a href="trainer.html">Trainer Appointment</a>
+                    <a href="bloodTest.html">Blood Test</a>
+                    <a href="diet.html">Diet Plans</a>
+                </div>
+            </div>
+            <a href="News.html">News</a>
+            <a href="Therapy.html">Therapy</a>
+            <a href="Exercise.html">Integrative Workouts</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="contactUs.html">Contact Us</a>
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+    <!-- Trainers Section -->
+    <h1 id="meet-trainers">
+        Meet Your Trainers
+    </h1>
+    <div class="trainers-section">
+        <p>
+            Achieve your fitness goals with personalized guidance from our expert trainers! At <b>Health & Wellness</b>, we
+            understand that every individual’s fitness journey is unique. That’s why we’ve brought together a team of
+            certified professionals specializing in weight management, strength training, and holistic wellness. Whether
+            you're starting fresh or pushing your limits, our trainers will design a customized plan tailored to your
+            goals and lifestyle. Book your appointment today and take the first step toward transforming your health
+            with the support of experienced mentors who are as dedicated to your success as you are!
+        </p>
+        <div class="trainers">
+            <div class="trainer">
+                <img alt="Portrait of Yoga Trainer" height="150" src="dr1.jpg" width="150" />
+                <h2>Yoga Trainer</h2>
+                <h3>Specializing in Yoga</h3>
+                <p>Expert in various yoga techniques to improve flexibility and mental peace.</p>
+                <button onclick="bookTrainer('Yoga Trainer')">
+                    Book
+                </button>
+            </div>
+            <div class="trainer">
+                <img alt="Portrait of Mental Health Consultant" height="150" src="dr2.jpeg" width="150" />
+                <h2>Mental Health Consultant</h2>
+                <h3>Specializing in Mental Health</h3>
+                <p>Providing mental health support and counseling for overall well-being.</p>
+                <button onclick="bookTrainer('Mental Health Consultant')">
+                    Book
+                </button>
+            </div>
+            <div class="trainer">
+                <img alt="Portrait of Gym Exercise Trainer" height="150"
+                    src="t1.jpeg"
+                    width="150" />
+                <h2>
+                    Gym Exercise Trainer
+                </h2>
+                <h3>Specializing in Gym Exercises</h3>
+                <p>Expert in gym workouts to build muscle and improve fitness levels.
+                </p>
+                <button onclick="bookTrainer('Gym Exercise Trainer')">
+                    Book
+                </button>
+            </div>
+            <div class="trainer">
+                <img alt="Portrait of Cardio Trainer" height="150" src="t2.jpeg" width="150" />
+                <h2>Cardio Trainer</h2>
+                <h3>Specializing in Cardio</h3>
+                <p>Focused on cardiovascular exercises to improve heart health and stamina.</p>
+                <button onclick="bookTrainer('Cardio Trainer')">
+                    Book
+                </button>
+            </div>
+            <div class="trainer">
+                <img alt="Portrait of Strength Trainer" height="150" src="t4.jpeg" width="150" />
+                <h2>Strength Trainer</h2>
+                <h3>Specializing in Strength Training</h3>
+                <p>Helping clients build strength and muscle through targeted exercises.</p>
+                <button onclick="bookTrainer('Strength Trainer')">
+                    Book
+                </button>
+            </div>
+            <div class="trainer">
+                <img alt="Portrait of Weight Management Trainer" height="150"
+                    src="dr5.jpeg"
+                    width="150" />
+                <h2>Weight Management Trainer</h2>
+                <h3>Specializing in Weight Management</h3>
+                <p>Expert in helping clients gain or reduce weight through personalized plans.</p>
+                <button onclick="bookTrainer('Weight Management Trainer')">
+                    Book
+                </button>
+            </div>
+        </div>
+    </div>
+<!--footer-->
+<footer>
+    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 30px;">
+        <!-- About Section -->
+        <div style="flex: 1; min-width: 250px; display: flex; flex-direction: column; gap: 15px;">
+            <h3>About Health & Wellness</h3>
+            <p style="line-height: 1.6;">At Health & Wellness, we believe in empowering individuals to live a
+                healthy and balanced life. With personalized fitness plans, expert consultations, and support, we
+                guide you every step of the way toward a healthier future.</p>
+            </div>
+        <!-- Quick Links Section -->
+        <div style="flex: 1; min-width: 250px;">
+            <h3>Quick Links</h3>
+            <ul style="list-style: none; padding: 0;display: flex;flex-direction: column; gap: 15px;">           
+                <li><a href="index.html" style="color: #2a5d94; text-decoration: none;">Home</a></li>
+                <li><a href="bmical.html" style="color: #2a5d94; text-decoration: none;">BMI Calculator</a></li>
+                <li><a href="trainer.html" style="color: #2a5d94; text-decoration: none;">Trainer Appointment</a>
+                </li>
+                <li><a href="bloodTest.html" style="color: #2a5d94; text-decoration: none;">Blood Test</a></li>
+                <li><a href="diet.html" style="color: #2a5d94; text-decoration: none;">Diet Plans</a></li>
+                <li><a href="News.html" style="color: #2a5d94; text-decoration: none;">News</a></li>
+                <li><a href="contactUs.html" style="color: #2a5d94; text-decoration: none;">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Contact Section -->
+        <div style="flex: 1; min-width: 250px;">
+            <h3 style="margin-left: 40px;">Contact Us</h3>
+            <ul
+                style="list-style: none; display: flex; flex-direction: column; gap: 13px; justify-content: flex-start; margin: 15px 0;">
+                <li>Email: <a href="mailto:support@health&wellness.com"
+                        style="color: #2a5d94; text-decoration: none;">support@health&wellness.com</a></li>
+                <li>Phone: <a href="tel:+919151715158" style="color: #2a5d94; text-decoration: none;">(+91) 91517
+                        15158</a></li>
+                <li>Address: Health & Wellness Center, 123 Wellness Street, Health City, India</li>
+            </ul>
+        </div>
+        <!-- Our Social Handles Section -->
+        <div style="flex: 1; min-width: 250px;">
+            <h3>Our Social Handles</h3>
+            <ul style="list-style: none; padding: 0; margin: 15px 0; display: flex; gap: 25px;">
+                <li><a href="#" style="color: #2a5d94; font-size: 24px;">
+                        <i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li><a href="#" style="color: #2a5d94; font-size: 24px;">
+                        <i class="fab fa-twitter"></i></a>
+                </li>
+                <li><a href="#" style="color: #2a5d94; font-size: 24px;">
+                        <i class="fab fa-instagram"></i></a>
+                </li>
+                <li><a href="#" style="color: #2a5d94; font-size: 24px;">
+                        <i class="fab fa-linkedin-in"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<div style="text-align: center; margin-top: 30px; font-size: 14px;">
+    <p>&copy; 2024 Health & Wellness. All rights reserved.</p>
+</div>
+</body>
+</html>
