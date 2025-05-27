@@ -18,3 +18,14 @@ A responsive static website designed to promote healthy living and wellness. Bui
 ├── bmi.html # BMI calculator
 ├── exercise.html # Exercise and fitness content
 └── blog.html # Blog/news page
+
+
+
+## 💡 Purpose
+
+This project was developed as part of academic coursework to showcase frontend development skills, and also to spread awareness about health and wellness practices.
+
+---
+
+> ⚠️ Note: This is a static project. No backend or database functionality is included.
+
